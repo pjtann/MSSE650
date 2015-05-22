@@ -14,6 +14,8 @@
 		6D01A88C1B0F7F6300196750 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D01A88B1B0F7F6300196750 /* Images.xcassets */; };
 		6D01A88F1B0F7F6300196750 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D01A88D1B0F7F6300196750 /* LaunchScreen.xib */; };
 		6D01A89B1B0F7F6300196750 /* AuditionTracker_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D01A89A1B0F7F6300196750 /* AuditionTracker_2Tests.m */; };
+		6D01A8A71B0F81F600196750 /* Audition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D01A8A61B0F81F600196750 /* Audition.m */; };
+		6D01A8AB1B0F831800196750 /* AuditionSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D01A8AA1B0F831800196750 /* AuditionSvcCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		6D01A8941B0F7F6300196750 /* AuditionTracker-2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AuditionTracker-2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D01A8991B0F7F6300196750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D01A89A1B0F7F6300196750 /* AuditionTracker_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuditionTracker_2Tests.m; sourceTree = "<group>"; };
+		6D01A8A51B0F81F600196750 /* Audition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Audition.h; sourceTree = "<group>"; };
+		6D01A8A61B0F81F600196750 /* Audition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Audition.m; sourceTree = "<group>"; };
+		6D01A8A81B0F82AB00196750 /* AuditionSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionSvc.h; sourceTree = "<group>"; };
+		6D01A8A91B0F831800196750 /* AuditionSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionSvcCache.h; sourceTree = "<group>"; };
+		6D01A8AA1B0F831800196750 /* AuditionSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuditionSvcCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 		6D01A87D1B0F7F6300196750 /* AuditionTracker-2 */ = {
 			isa = PBXGroup;
 			children = (
+				6D01A8A41B0F7F6B00196750 /* Model */,
 				6D01A8821B0F7F6300196750 /* AppDelegate.h */,
 				6D01A8831B0F7F6300196750 /* AppDelegate.m */,
 				6D01A8851B0F7F6300196750 /* ViewController.h */,
@@ -117,6 +125,18 @@
 				6D01A8991B0F7F6300196750 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D01A8A41B0F7F6B00196750 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D01A8A51B0F81F600196750 /* Audition.h */,
+				6D01A8A61B0F81F600196750 /* Audition.m */,
+				6D01A8A81B0F82AB00196750 /* AuditionSvc.h */,
+				6D01A8A91B0F831800196750 /* AuditionSvcCache.h */,
+				6D01A8AA1B0F831800196750 /* AuditionSvcCache.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +241,9 @@
 			files = (
 				6D01A8871B0F7F6300196750 /* ViewController.m in Sources */,
 				6D01A8841B0F7F6300196750 /* AppDelegate.m in Sources */,
+				6D01A8A71B0F81F600196750 /* Audition.m in Sources */,
 				6D01A8811B0F7F6300196750 /* main.m in Sources */,
+				6D01A8AB1B0F831800196750 /* AuditionSvcCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
