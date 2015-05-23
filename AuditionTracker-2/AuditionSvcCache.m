@@ -6,13 +6,6 @@
 //  Copyright (c) 2015 msse650. All rights reserved.
 //
 
-//#import "AuditionSvcCache.h"
-//
-//@implementation AuditionSvcCache
-//
-//
-//
-//@end
 #import "AuditionSvcCache.h"
 
 @implementation AuditionSvcCache
@@ -48,7 +41,6 @@ NSMutableArray *auditions = nil;
 }
 
 -(Audition *) deleteAudition:(Audition *)audition{
-    NSLog(@"Delete method in svc m file, auditions value: %@", auditions);
     [auditions removeObject:audition];
     return audition;
     

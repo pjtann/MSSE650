@@ -10,14 +10,10 @@
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-
 @property (weak, nonatomic) IBOutlet UITextField *auditionTitle;
 @property (weak, nonatomic) IBOutlet UITextField *auditionDate;
 
-
-
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 
 - (IBAction)saveAudition:(id)sender;
 - (IBAction)deleteAudition:(id)sender;

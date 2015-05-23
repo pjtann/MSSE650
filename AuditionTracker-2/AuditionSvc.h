@@ -6,11 +6,6 @@
 //  Copyright (c) 2015 msse650. All rights reserved.
 //
 
-//#import <Foundation/Foundation.h>
-//
-//@protocol AuditionSvc <NSObject>
-//
-//@end
 
 #import <Foundation/Foundation.h>
 #import "Audition.h"

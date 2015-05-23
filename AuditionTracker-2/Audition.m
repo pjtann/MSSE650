@@ -11,7 +11,7 @@
 @implementation Audition
 
 -(NSString *)description{
-    NSLog(@"Description string in audition m file - %@ %@", _auditionTitle, _auditionDate);
+    
     return [NSString stringWithFormat:@"%@, %@", _auditionTitle, _auditionDate];
     
 }
