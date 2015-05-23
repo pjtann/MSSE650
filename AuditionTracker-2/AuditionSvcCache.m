@@ -12,10 +12,8 @@
 
 NSMutableArray *auditions = nil;
 
-
 - (id)init
 {
-    //    self = [super init];
     if (self = [super init]) {
         auditions = [NSMutableArray array];
         return self;
@@ -30,7 +28,6 @@ NSMutableArray *auditions = nil;
 }
 
 -(NSMutableArray *) retrieveAllAuditions{
-//    NSLog(@"Contents of auditions in cache m file - %@", auditions);
     return auditions;
     
 }
@@ -45,7 +42,5 @@ NSMutableArray *auditions = nil;
     return audition;
     
 }
-
-
 
 @end

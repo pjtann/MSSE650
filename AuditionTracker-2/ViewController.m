@@ -47,7 +47,7 @@ AuditionSvcCache *auditionSvc = nil;
     return [[auditionSvc retrieveAllAuditions] count];
     
 }
-
+// fill table rows
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *simpleTableIdentifier = @"SimpleTableItem";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
@@ -80,15 +80,11 @@ AuditionSvcCache *auditionSvc = nil;
     
 }
 
-
 // delete method
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
 
     if (editingStyle == UITableViewCellEditingStyleDelete) {
 
-
-        
-        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade]; // this is causing the error
 
         [self.tableView reloadData];
