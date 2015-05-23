@@ -13,6 +13,4 @@
 @property (nonatomic, strong) NSString *auditionTitle;
 @property (nonatomic, strong) NSString *auditionDate;
 
-
-
 @end
