@@ -10,6 +10,7 @@
 
 @implementation Audition
 
+//array used for cacheing entry field information
 -(NSString *)description{
     
     return [NSString stringWithFormat:@"%@, %@", _auditionTitle, _auditionDate];

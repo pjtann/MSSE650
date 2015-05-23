@@ -36,7 +36,7 @@ NSMutableArray *auditions = nil;
     return audition;
     
 }
-
+//delete method
 -(Audition *) deleteAudition:(Audition *)audition{
     [auditions removeObject:audition];
     return audition;
