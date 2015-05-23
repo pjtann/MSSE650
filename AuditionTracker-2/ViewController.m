@@ -16,6 +16,7 @@
 
 @implementation ViewController
 
+// clear the cacheing object
 AuditionSvcCache *auditionSvc = nil;
 
 - (void)viewDidLoad {
