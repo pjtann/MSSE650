@@ -87,7 +87,8 @@ AuditionSvcCache *auditionSvc = nil;
     if (editingStyle == UITableViewCellEditingStyleDelete) {
 
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade]; // this is causing the error
-
+        
+        // reload the table data
         [self.tableView reloadData];
         
     }
