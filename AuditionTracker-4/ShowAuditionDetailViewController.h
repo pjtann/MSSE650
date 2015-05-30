@@ -12,6 +12,8 @@
 
 @interface ShowAuditionDetailViewController : UIViewController
 
+// property declaration for the display scene screen
+
 @property (strong, nonatomic) id auditionDetailItem;
 @property (strong, nonatomic) id auditionDetailTitle;
 @property (strong, nonatomic) id auditionDetailType;
