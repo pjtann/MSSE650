@@ -10,6 +10,7 @@
 
 @interface AuditionListTableViewController : UITableViewController
 
+// segue declaration for returning to AuditionListTableViewController from Add and Show scenes
 -(IBAction)unwindToList:(UIStoryboardSegue *)seque;
 
 
