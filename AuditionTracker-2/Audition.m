@@ -12,7 +12,7 @@
 
 //array used for cacheing entry field information
 -(NSString *)description{
-    
+    NSLog(@"Inside Audition.m file.");
     return [NSString stringWithFormat:@"%@, %@", _auditionTitle, _auditionDate];
     
 }

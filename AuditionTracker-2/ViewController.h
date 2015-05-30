@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"
+
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+
 
 @property (weak, nonatomic) IBOutlet UITextField *auditionTitle;
 @property (weak, nonatomic) IBOutlet UITextField *auditionDate;

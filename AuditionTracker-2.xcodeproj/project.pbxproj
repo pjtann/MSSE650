@@ -16,6 +16,7 @@
 		6D01A89B1B0F7F6300196750 /* AuditionTracker_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D01A89A1B0F7F6300196750 /* AuditionTracker_2Tests.m */; };
 		6D01A8A71B0F81F600196750 /* Audition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D01A8A61B0F81F600196750 /* Audition.m */; };
 		6D01A8AB1B0F831800196750 /* AuditionSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D01A8AA1B0F831800196750 /* AuditionSvcCache.m */; };
+		6D59B16D1B18090D00B2F273 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D59B16C1B18090D00B2F273 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		6D01A8A81B0F82AB00196750 /* AuditionSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionSvc.h; sourceTree = "<group>"; };
 		6D01A8A91B0F831800196750 /* AuditionSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionSvcCache.h; sourceTree = "<group>"; };
 		6D01A8AA1B0F831800196750 /* AuditionSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuditionSvcCache.m; sourceTree = "<group>"; };
+		6D59B16B1B18090D00B2F273 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		6D59B16C1B18090D00B2F273 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				6D01A8851B0F7F6300196750 /* ViewController.h */,
 				6D01A8861B0F7F6300196750 /* ViewController.m */,
 				6D01A8881B0F7F6300196750 /* Main.storyboard */,
+				6D59B16B1B18090D00B2F273 /* SecondViewController.h */,
+				6D59B16C1B18090D00B2F273 /* SecondViewController.m */,
 				6D01A88B1B0F7F6300196750 /* Images.xcassets */,
 				6D01A88D1B0F7F6300196750 /* LaunchScreen.xib */,
 				6D01A87E1B0F7F6300196750 /* Supporting Files */,
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D59B16D1B18090D00B2F273 /* SecondViewController.m in Sources */,
 				6D01A8871B0F7F6300196750 /* ViewController.m in Sources */,
 				6D01A8841B0F7F6300196750 /* AppDelegate.m in Sources */,
 				6D01A8A71B0F81F600196750 /* Audition.m in Sources */,
@@ -440,6 +446,7 @@
 				6D01A8A01B0F7F6300196750 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D01A8A11B0F7F6300196750 /* Build configuration list for PBXNativeTarget "AuditionTracker-2Tests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +455,7 @@
 				6D01A8A31B0F7F6300196750 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

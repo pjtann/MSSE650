@@ -39,6 +39,8 @@ AuditionSvcCache *auditionSvc = nil;
     
     Audition *audition = [[Audition alloc] init];
     audition.auditionTitle = _auditionTitle.text;
+    NSLog(@"Value of audition.auditionTitle in vc.m file: %@", audition.auditionTitle);
+    
     audition.auditionDate = _auditionDate.text; // add date to array
     [auditionSvc createAudition:audition];
     [self.tableView reloadData];
@@ -68,20 +70,6 @@ AuditionSvcCache *auditionSvc = nil;
     
 }
 
-// delete action
-- (IBAction)deleteAudition:(id)sender {
-
-    [self.view endEditing:YES];
-    
-    Audition *audition = [[Audition alloc] init];
-//    audition.auditionTitle = _auditionTitle.text;
-//    audition.auditionDate = _auditionDate.text; // add date to array
-    [auditionSvc deleteAudition:audition];
-
-//    [self.tableView reloadData];
-
-    
-}
 
 // delete method
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -95,6 +83,33 @@ AuditionSvcCache *auditionSvc = nil;
         
     }
 
+}
+
+// delete action
+- (IBAction)deleteAudition:(id)sender {
+    
+    [self.view endEditing:YES];
+    
+    Audition *audition = [[Audition alloc] init];
+    //    audition.auditionTitle = _auditionTitle.text;
+    //    audition.auditionDate = _auditionDate.text; // add date to array
+    [auditionSvc deleteAudition:audition];
+    
+    //    [self.tableView reloadData];
+    
+    
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    NSLog(@"Inside prepareForSegue in vc.m file.");
+    
+    if ([[segue identifier] isEqualToString:@"segueToDetail"]) {
+        NSLog(@"Inside the IF in the prepareForSegue in vc.m file.");
+        
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow]; // what's the selected cell?
+}
 }
 
 @end
