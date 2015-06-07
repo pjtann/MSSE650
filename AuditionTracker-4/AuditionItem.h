@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AuditionItem : NSObject
+@interface AuditionItem : NSObject <NSCoding> // added NSCoding for archiving to files
 
 // declare the properties
 @property NSString *auditionTitle;
