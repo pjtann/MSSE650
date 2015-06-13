@@ -87,19 +87,19 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Type" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gr7-Yk-I6A">
                                 <rect key="frame" x="156" y="169" width="288" height="30"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Contact" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bvc-7R-CBI">
                                 <rect key="frame" x="156" y="223" width="288" height="30"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Date" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3X8-cn-l57">
                                 <rect key="frame" x="156" y="280" width="288" height="30"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -132,7 +132,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="CBe-j6-gUX"/>
                                 </constraints>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -171,6 +171,12 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="J0Z-wu-ow2">
                             <connections>
                                 <segue destination="KTq-GZ-3G4" kind="unwind" identifier="segueFromShowCancelToList" unwindAction="unwindToList:" id="xv9-Cu-m7g"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Update" id="9KH-1d-Z8f">
+                            <connections>
+                                <action selector="auditionUpdateButton:" destination="Hh4-nI-pIj" id="357-cD-BgK"/>
+                                <segue destination="KTq-GZ-3G4" kind="unwind" identifier="segueFromShowSaveToList" unwindAction="unwindToList:" id="xp5-CU-eyW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

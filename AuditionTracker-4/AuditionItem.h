@@ -8,13 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AuditionItem : NSObject <NSCoding> // added NSCoding for archiving to files
+//@interface AuditionItem : NSObject <NSCoding> // added NSCoding for archiving to files
+@interface AuditionItem: NSObject
+
+
 
 // declare the properties
 @property NSString *auditionTitle;
 @property NSString *auditionType;
 @property NSString *auditionContact;
 @property NSString *auditionDate;
+
+//@property NSDate *auditionDate;// change to NSDate property
+
+
+@property long id; // added because use in SQL sees id as a long long rather than integer
+
 
 @property BOOL completed;
 

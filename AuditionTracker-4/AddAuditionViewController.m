@@ -14,6 +14,13 @@
 @property (weak, nonatomic) IBOutlet UITextField *auditionType;
 @property (weak, nonatomic) IBOutlet UITextField *auditionContact;
 @property (weak, nonatomic) IBOutlet UITextField *auditionDate;
+//@property (weak, nonatomic) IBOutlet UITextField *auditionTime;
+//@property (weak, nonatomic) IBOutlet UITextField *auditionLocation;
+//@property (weak, nonatomic) IBOutlet UITextField *auditionStatus;
+//@property (weak, nonatomic) IBOutlet UITextField *auditionCost;
+
+//@property enum UIDatePickerMode *auditionDate; // changing to date format
+
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveAuditionButton;
 
@@ -25,6 +32,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+//    [numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+//    [[self.auditionDate.text cell] setFormatter:numberFormatter];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,13 +63,18 @@
         self.auditionItem.auditionType = self.auditionType.text;
         self.auditionItem.auditionContact = self.auditionContact.text;
         self.auditionItem.auditionDate = self.auditionDate.text;
+//        self.auditionItem.auditionTime = self.auditionTime.text;
+//        self.auditionItem.auditionLocation = self.auditionLocation.text;
+//        self.auditionItem.auditionStatus = self.auditionStatus.text;
+//        self.auditionItem.auditionCost = self.auditionCost.text;
+        
+        //self.auditionItem.auditionDate = self.auditionDate.
+        
         
         self.auditionItem.completed = NO;
         
     }
     
-    
 }
-
 
 @end

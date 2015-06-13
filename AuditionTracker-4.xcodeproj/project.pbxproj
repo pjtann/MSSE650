@@ -14,6 +14,9 @@
 		6D59B1BD1B18A6BB00B2F273 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D59B1BB1B18A6BB00B2F273 /* LaunchScreen.xib */; };
 		6D59B1C91B18A6BB00B2F273 /* AuditionTracker_4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D59B1C81B18A6BB00B2F273 /* AuditionTracker_4Tests.m */; };
 		6D6B50DF1B1E368A004B8FCE /* AuditionSvcArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6B50DE1B1E368A004B8FCE /* AuditionSvcArchive.m */; };
+		6D6FDF2E1B248218008F3520 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6FDF2D1B248218008F3520 /* libsqlite3.dylib */; };
+		6D6FDF311B248315008F3520 /* AuditionSvcSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6FDF301B248315008F3520 /* AuditionSvcSQLite.m */; };
+		6D6FDF331B24BBE2008F3520 /* SQLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6FDF321B24BBE2008F3520 /* SQLiteTests.m */; };
 		6D91B1141B18AC17006D4C4B /* AuditionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D91B1131B18AC17006D4C4B /* AuditionListTableViewController.m */; };
 		6D91B1171B18AD32006D4C4B /* AddAuditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D91B1161B18AD32006D4C4B /* AddAuditionViewController.m */; };
 		6D91B11D1B18B22E006D4C4B /* AuditionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D91B11C1B18B22E006D4C4B /* AuditionItem.m */; };
@@ -45,6 +48,10 @@
 		6D6B50DD1B1E368A004B8FCE /* AuditionSvcArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionSvcArchive.h; sourceTree = "<group>"; };
 		6D6B50DE1B1E368A004B8FCE /* AuditionSvcArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuditionSvcArchive.m; sourceTree = "<group>"; };
 		6D6B50E01B1E3E08004B8FCE /* AuditionSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionSvc.h; sourceTree = "<group>"; };
+		6D6FDF2D1B248218008F3520 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6D6FDF2F1B248315008F3520 /* AuditionSvcSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuditionSvcSQLite.h; path = ../AuditionSvcSQLite.h; sourceTree = "<group>"; };
+		6D6FDF301B248315008F3520 /* AuditionSvcSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuditionSvcSQLite.m; path = ../AuditionSvcSQLite.m; sourceTree = "<group>"; };
+		6D6FDF321B24BBE2008F3520 /* SQLiteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteTests.m; sourceTree = "<group>"; };
 		6D91B1121B18AC17006D4C4B /* AuditionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionListTableViewController.h; sourceTree = "<group>"; };
 		6D91B1131B18AC17006D4C4B /* AuditionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuditionListTableViewController.m; sourceTree = "<group>"; };
 		6D91B1151B18AD32006D4C4B /* AddAuditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAuditionViewController.h; sourceTree = "<group>"; };
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6FDF2E1B248218008F3520 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +84,7 @@
 		6D59B1A01B18A6BB00B2F273 = {
 			isa = PBXGroup;
 			children = (
+				6D6FDF2D1B248218008F3520 /* libsqlite3.dylib */,
 				6D59B1AB1B18A6BB00B2F273 /* AuditionTracker-4 */,
 				6D59B1C51B18A6BB00B2F273 /* AuditionTracker-4Tests */,
 				6D59B1AA1B18A6BB00B2F273 /* Products */,
@@ -102,6 +111,8 @@
 				6D6B50E01B1E3E08004B8FCE /* AuditionSvc.h */,
 				6D6B50DD1B1E368A004B8FCE /* AuditionSvcArchive.h */,
 				6D6B50DE1B1E368A004B8FCE /* AuditionSvcArchive.m */,
+				6D6FDF2F1B248315008F3520 /* AuditionSvcSQLite.h */,
+				6D6FDF301B248315008F3520 /* AuditionSvcSQLite.m */,
 				6D91B1121B18AC17006D4C4B /* AuditionListTableViewController.h */,
 				6D91B1131B18AC17006D4C4B /* AuditionListTableViewController.m */,
 				6D91B1151B18AD32006D4C4B /* AddAuditionViewController.h */,
@@ -129,6 +140,7 @@
 			children = (
 				6D59B1C81B18A6BB00B2F273 /* AuditionTracker_4Tests.m */,
 				6D59B1C61B18A6BB00B2F273 /* Supporting Files */,
+				6D6FDF321B24BBE2008F3520 /* SQLiteTests.m */,
 			);
 			path = "AuditionTracker-4Tests";
 			sourceTree = "<group>";
@@ -242,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D91B1141B18AC17006D4C4B /* AuditionListTableViewController.m in Sources */,
+				6D6FDF311B248315008F3520 /* AuditionSvcSQLite.m in Sources */,
 				6D59B1B21B18A6BB00B2F273 /* AppDelegate.m in Sources */,
 				6D91B1171B18AD32006D4C4B /* AddAuditionViewController.m in Sources */,
 				6D6B50DF1B1E368A004B8FCE /* AuditionSvcArchive.m in Sources */,
@@ -256,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D59B1C91B18A6BB00B2F273 /* AuditionTracker_4Tests.m in Sources */,
+				6D6FDF331B24BBE2008F3520 /* SQLiteTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
