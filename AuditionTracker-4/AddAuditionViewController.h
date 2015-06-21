@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AuditionItem.h"
+//#import "AuditionItem.h" // removed with convert to 'Auditions' class with Core Data implementation
+#import "Auditions.h"
 
 
 @interface AddAuditionViewController : UIViewController
 
-@property AuditionItem *auditionItem;
+@property Auditions *auditionItem;
 
 
 @end
