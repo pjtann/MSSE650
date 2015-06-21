@@ -12,12 +12,17 @@
 		6D59B1B81B18A6BB00B2F273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D59B1B61B18A6BB00B2F273 /* Main.storyboard */; };
 		6D59B1BA1B18A6BB00B2F273 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D59B1B91B18A6BB00B2F273 /* Images.xcassets */; };
 		6D59B1BD1B18A6BB00B2F273 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D59B1BB1B18A6BB00B2F273 /* LaunchScreen.xib */; };
-		6D59B1C91B18A6BB00B2F273 /* AuditionTracker_4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D59B1C81B18A6BB00B2F273 /* AuditionTracker_4Tests.m */; };
-		6D6B50DF1B1E368A004B8FCE /* AuditionSvcArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6B50DE1B1E368A004B8FCE /* AuditionSvcArchive.m */; };
+		6D6FDF2E1B248218008F3520 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6FDF2D1B248218008F3520 /* libsqlite3.dylib */; };
 		6D91B1141B18AC17006D4C4B /* AuditionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D91B1131B18AC17006D4C4B /* AuditionListTableViewController.m */; };
 		6D91B1171B18AD32006D4C4B /* AddAuditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D91B1161B18AD32006D4C4B /* AddAuditionViewController.m */; };
-		6D91B11D1B18B22E006D4C4B /* AuditionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D91B11C1B18B22E006D4C4B /* AuditionItem.m */; };
 		6D91B1201B18DFAD006D4C4B /* ShowAuditionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D91B11F1B18DFAD006D4C4B /* ShowAuditionDetailViewController.m */; };
+		6DE6F3091B2B6686001CB331 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE6F3081B2B6686001CB331 /* CoreData.framework */; };
+		6DE6F30C1B2B6764001CB331 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6F30A1B2B6764001CB331 /* Model.xcdatamodeld */; };
+		6DE6F3101B2B691E001CB331 /* AuditionSvcCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6F30F1B2B691E001CB331 /* AuditionSvcCoreData.m */; };
+		6DE6F3161B2B773F001CB331 /* Auditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6F3151B2B773F001CB331 /* Auditions.m */; };
+		6DE6F31E1B2F1787001CB331 /* AuditionTrackerMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6F31D1B2F1787001CB331 /* AuditionTrackerMainViewController.m */; };
+		6DE6F3211B2F8192001CB331 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6F3201B2F8192001CB331 /* InfoViewController.m */; };
+		6DE6F3241B2F86A3001CB331 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6F3231B2F86A3001CB331 /* Info.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,18 +46,26 @@
 		6D59B1BC1B18A6BB00B2F273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6D59B1C21B18A6BB00B2F273 /* AuditionTracker-4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AuditionTracker-4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D59B1C71B18A6BB00B2F273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D59B1C81B18A6BB00B2F273 /* AuditionTracker_4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuditionTracker_4Tests.m; sourceTree = "<group>"; };
-		6D6B50DD1B1E368A004B8FCE /* AuditionSvcArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionSvcArchive.h; sourceTree = "<group>"; };
-		6D6B50DE1B1E368A004B8FCE /* AuditionSvcArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuditionSvcArchive.m; sourceTree = "<group>"; };
 		6D6B50E01B1E3E08004B8FCE /* AuditionSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionSvc.h; sourceTree = "<group>"; };
+		6D6FDF2D1B248218008F3520 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		6D91B1121B18AC17006D4C4B /* AuditionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionListTableViewController.h; sourceTree = "<group>"; };
 		6D91B1131B18AC17006D4C4B /* AuditionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuditionListTableViewController.m; sourceTree = "<group>"; };
 		6D91B1151B18AD32006D4C4B /* AddAuditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAuditionViewController.h; sourceTree = "<group>"; };
 		6D91B1161B18AD32006D4C4B /* AddAuditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAuditionViewController.m; sourceTree = "<group>"; };
-		6D91B11B1B18B22E006D4C4B /* AuditionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionItem.h; sourceTree = "<group>"; };
-		6D91B11C1B18B22E006D4C4B /* AuditionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuditionItem.m; sourceTree = "<group>"; };
 		6D91B11E1B18DFAD006D4C4B /* ShowAuditionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAuditionDetailViewController.h; sourceTree = "<group>"; };
 		6D91B11F1B18DFAD006D4C4B /* ShowAuditionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAuditionDetailViewController.m; sourceTree = "<group>"; };
+		6DE6F3081B2B6686001CB331 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6DE6F30B1B2B6764001CB331 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		6DE6F30E1B2B691E001CB331 /* AuditionSvcCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionSvcCoreData.h; sourceTree = "<group>"; };
+		6DE6F30F1B2B691E001CB331 /* AuditionSvcCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuditionSvcCoreData.m; sourceTree = "<group>"; };
+		6DE6F3141B2B773F001CB331 /* Auditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auditions.h; sourceTree = "<group>"; };
+		6DE6F3151B2B773F001CB331 /* Auditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auditions.m; sourceTree = "<group>"; };
+		6DE6F31C1B2F1787001CB331 /* AuditionTrackerMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuditionTrackerMainViewController.h; path = ../AuditionTrackerMainViewController.h; sourceTree = "<group>"; };
+		6DE6F31D1B2F1787001CB331 /* AuditionTrackerMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuditionTrackerMainViewController.m; path = ../AuditionTrackerMainViewController.m; sourceTree = "<group>"; };
+		6DE6F31F1B2F8192001CB331 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		6DE6F3201B2F8192001CB331 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		6DE6F3221B2F86A3001CB331 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		6DE6F3231B2F86A3001CB331 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE6F3091B2B6686001CB331 /* CoreData.framework in Frameworks */,
+				6D6FDF2E1B248218008F3520 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,8 @@
 		6D59B1A01B18A6BB00B2F273 = {
 			isa = PBXGroup;
 			children = (
+				6DE6F3081B2B6686001CB331 /* CoreData.framework */,
+				6D6FDF2D1B248218008F3520 /* libsqlite3.dylib */,
 				6D59B1AB1B18A6BB00B2F273 /* AuditionTracker-4 */,
 				6D59B1C51B18A6BB00B2F273 /* AuditionTracker-4Tests */,
 				6D59B1AA1B18A6BB00B2F273 /* Products */,
@@ -94,14 +111,10 @@
 		6D59B1AB1B18A6BB00B2F273 /* AuditionTracker-4 */ = {
 			isa = PBXGroup;
 			children = (
+				6DE6F30D1B2B68B6001CB331 /* Model */,
 				6D59B1B01B18A6BB00B2F273 /* AppDelegate.h */,
 				6D59B1B11B18A6BB00B2F273 /* AppDelegate.m */,
 				6D59B1B61B18A6BB00B2F273 /* Main.storyboard */,
-				6D91B11B1B18B22E006D4C4B /* AuditionItem.h */,
-				6D91B11C1B18B22E006D4C4B /* AuditionItem.m */,
-				6D6B50E01B1E3E08004B8FCE /* AuditionSvc.h */,
-				6D6B50DD1B1E368A004B8FCE /* AuditionSvcArchive.h */,
-				6D6B50DE1B1E368A004B8FCE /* AuditionSvcArchive.m */,
 				6D91B1121B18AC17006D4C4B /* AuditionListTableViewController.h */,
 				6D91B1131B18AC17006D4C4B /* AuditionListTableViewController.m */,
 				6D91B1151B18AD32006D4C4B /* AddAuditionViewController.h */,
@@ -127,7 +140,6 @@
 		6D59B1C51B18A6BB00B2F273 /* AuditionTracker-4Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6D59B1C81B18A6BB00B2F273 /* AuditionTracker_4Tests.m */,
 				6D59B1C61B18A6BB00B2F273 /* Supporting Files */,
 			);
 			path = "AuditionTracker-4Tests";
@@ -139,6 +151,25 @@
 				6D59B1C71B18A6BB00B2F273 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DE6F30D1B2B68B6001CB331 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DE6F31C1B2F1787001CB331 /* AuditionTrackerMainViewController.h */,
+				6DE6F31D1B2F1787001CB331 /* AuditionTrackerMainViewController.m */,
+				6DE6F31F1B2F8192001CB331 /* InfoViewController.h */,
+				6DE6F3201B2F8192001CB331 /* InfoViewController.m */,
+				6DE6F3221B2F86A3001CB331 /* Info.h */,
+				6DE6F3231B2F86A3001CB331 /* Info.m */,
+				6D6B50E01B1E3E08004B8FCE /* AuditionSvc.h */,
+				6DE6F30E1B2B691E001CB331 /* AuditionSvcCoreData.h */,
+				6DE6F30F1B2B691E001CB331 /* AuditionSvcCoreData.m */,
+				6DE6F30A1B2B6764001CB331 /* Model.xcdatamodeld */,
+				6DE6F3141B2B773F001CB331 /* Auditions.h */,
+				6DE6F3151B2B773F001CB331 /* Auditions.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,13 +272,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE6F31E1B2F1787001CB331 /* AuditionTrackerMainViewController.m in Sources */,
 				6D91B1141B18AC17006D4C4B /* AuditionListTableViewController.m in Sources */,
 				6D59B1B21B18A6BB00B2F273 /* AppDelegate.m in Sources */,
 				6D91B1171B18AD32006D4C4B /* AddAuditionViewController.m in Sources */,
-				6D6B50DF1B1E368A004B8FCE /* AuditionSvcArchive.m in Sources */,
+				6DE6F3101B2B691E001CB331 /* AuditionSvcCoreData.m in Sources */,
+				6DE6F30C1B2B6764001CB331 /* Model.xcdatamodeld in Sources */,
+				6DE6F3241B2F86A3001CB331 /* Info.m in Sources */,
 				6D91B1201B18DFAD006D4C4B /* ShowAuditionDetailViewController.m in Sources */,
+				6DE6F3161B2B773F001CB331 /* Auditions.m in Sources */,
+				6DE6F3211B2F8192001CB331 /* InfoViewController.m in Sources */,
 				6D59B1AF1B18A6BB00B2F273 /* main.m in Sources */,
-				6D91B11D1B18B22E006D4C4B /* AuditionItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D59B1C91B18A6BB00B2F273 /* AuditionTracker_4Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +490,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6DE6F30A1B2B6764001CB331 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6DE6F30B1B2B6764001CB331 /* Model.xcdatamodel */,
+			);
+			currentVersion = 6DE6F30B1B2B6764001CB331 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6D59B1A11B18A6BB00B2F273 /* Project object */;
 }
