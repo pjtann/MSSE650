@@ -210,33 +210,6 @@
             </objects>
             <point key="canvasLocation" x="748" y="-273"/>
         </scene>
-        <!--Audition Category-->
-        <scene sceneID="XDW-ar-bxN">
-            <objects>
-                <tableViewController title="Audition Category" id="Uwo-7Z-cGA" customClass="AuditionCategoryTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cQj-le-7hf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryPrototypeCell" id="TCu-KJ-5IC">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TCu-KJ-5IC" id="TZn-6j-iB2">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Uwo-7Z-cGA" id="C2c-OQ-gll"/>
-                            <outlet property="delegate" destination="Uwo-7Z-cGA" id="8Yq-1L-JJo"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="pFA-v9-2oW"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HVM-0Q-d8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1191" y="587"/>
-        </scene>
         <!--Audition Tracker-->
         <scene sceneID="jfe-kN-7la">
             <objects>
@@ -399,81 +372,88 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Type" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1h-Ix-okx">
-                                <rect key="frame" x="161" y="177" width="288" height="30"/>
+                                <rect key="frame" x="161" y="166" width="288" height="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="56" y="162" width="288" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Time" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3QQ-L0-Pns">
-                                <rect key="frame" x="161" y="360" width="288" height="30"/>
+                                <rect key="frame" x="161" y="331" width="288" height="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="56" y="327" width="288" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Location" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PdR-Yr-icY">
-                                <rect key="frame" x="161" y="416" width="288" height="30"/>
+                                <rect key="frame" x="161" y="383" width="288" height="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Status" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S2i-o0-lfr">
-                                <rect key="frame" x="161" y="473" width="288" height="30"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Cost" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Uk-ZD-ctR">
-                                <rect key="frame" x="161" y="530" width="288" height="30"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="56" y="379" width="288" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Date" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0zQ-MT-seF">
-                                <rect key="frame" x="161" y="298" width="288" height="30"/>
+                                <rect key="frame" x="161" y="277" width="288" height="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="56" y="273" width="288" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Contact" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vyy-9L-bls">
-                                <rect key="frame" x="161" y="239" width="288" height="30"/>
+                                <rect key="frame" x="161" y="222" width="288" height="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="56" y="218" width="288" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Title" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bq9-eF-0mD">
-                                <rect key="frame" x="161" y="118" width="288" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="288" id="lOx-XG-Y0J"/>
-                                </constraints>
+                                <rect key="frame" x="161" y="110" width="288" height="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="56" y="106" width="288" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Status" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S2i-o0-lfr">
+                                <rect key="frame" x="161" y="438" width="288" height="30"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="56" y="434" width="288" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audition Cost" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Uk-ZD-ctR">
+                                <rect key="frame" x="161" y="487" width="288" height="30"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="56" y="483" width="288" height="30"/>
+                                </variation>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0zQ-MT-seF" firstAttribute="trailing" secondItem="3QQ-L0-Pns" secondAttribute="trailing" id="0p2-hL-lnq"/>
-                            <constraint firstItem="3QQ-L0-Pns" firstAttribute="leading" secondItem="PdR-Yr-icY" secondAttribute="leading" id="3Pz-QA-oo8"/>
-                            <constraint firstItem="vyy-9L-bls" firstAttribute="top" secondItem="n1h-Ix-okx" secondAttribute="bottom" constant="32" id="7Gs-Gj-bfL"/>
-                            <constraint firstItem="0zQ-MT-seF" firstAttribute="top" secondItem="vyy-9L-bls" secondAttribute="bottom" constant="29" id="BPb-Jh-LXh"/>
-                            <constraint firstItem="3QQ-L0-Pns" firstAttribute="trailing" secondItem="PdR-Yr-icY" secondAttribute="trailing" id="CaM-hT-Pws"/>
-                            <constraint firstItem="n1h-Ix-okx" firstAttribute="leading" secondItem="vyy-9L-bls" secondAttribute="leading" id="Lya-dF-Fm8"/>
-                            <constraint firstItem="S2i-o0-lfr" firstAttribute="trailing" secondItem="PdR-Yr-icY" secondAttribute="trailing" id="M8d-ek-vZj"/>
-                            <constraint firstItem="vyy-9L-bls" firstAttribute="leading" secondItem="0zQ-MT-seF" secondAttribute="leading" id="MR2-wJ-gR2"/>
-                            <constraint firstItem="n1h-Ix-okx" firstAttribute="trailing" secondItem="Bq9-eF-0mD" secondAttribute="trailing" id="QiI-v6-7e9"/>
-                            <constraint firstItem="0zQ-MT-seF" firstAttribute="trailing" secondItem="vyy-9L-bls" secondAttribute="trailing" id="UA8-LH-dyN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Uk-ZD-ctR" secondAttribute="bottom" constant="40" id="aFl-pl-sJF"/>
-                            <constraint firstItem="n1h-Ix-okx" firstAttribute="leading" secondItem="Bq9-eF-0mD" secondAttribute="leading" id="cRV-Gm-bBK"/>
-                            <constraint firstItem="n1h-Ix-okx" firstAttribute="top" secondItem="Bq9-eF-0mD" secondAttribute="bottom" constant="29" id="f07-1j-C61"/>
-                            <constraint firstItem="2Uk-ZD-ctR" firstAttribute="trailing" secondItem="S2i-o0-lfr" secondAttribute="trailing" id="fua-P1-Sfu"/>
-                            <constraint firstItem="vyy-9L-bls" firstAttribute="trailing" secondItem="n1h-Ix-okx" secondAttribute="trailing" id="haw-i1-5sN"/>
-                            <constraint firstItem="2Uk-ZD-ctR" firstAttribute="top" secondItem="S2i-o0-lfr" secondAttribute="bottom" constant="27" id="lw8-qg-Ddv"/>
-                            <constraint firstItem="3QQ-L0-Pns" firstAttribute="top" secondItem="0zQ-MT-seF" secondAttribute="bottom" constant="32" id="ssG-lg-B2i"/>
-                            <constraint firstItem="0zQ-MT-seF" firstAttribute="leading" secondItem="3QQ-L0-Pns" secondAttribute="leading" id="vDQ-zF-8iJ"/>
-                            <constraint firstItem="PdR-Yr-icY" firstAttribute="leading" secondItem="S2i-o0-lfr" secondAttribute="leading" id="wAa-1O-2Ka"/>
-                            <constraint firstItem="S2i-o0-lfr" firstAttribute="top" secondItem="PdR-Yr-icY" secondAttribute="bottom" constant="27" id="wCc-ic-XRT"/>
-                            <constraint firstItem="S2i-o0-lfr" firstAttribute="leading" secondItem="2Uk-ZD-ctR" secondAttribute="leading" id="wmp-GT-kmG"/>
-                            <constraint firstItem="PdR-Yr-icY" firstAttribute="top" secondItem="3QQ-L0-Pns" secondAttribute="bottom" constant="26" id="x2F-In-UG6"/>
+                            <constraint firstAttribute="centerX" secondItem="2Uk-ZD-ctR" secondAttribute="centerX" id="7EH-6v-lZj"/>
+                            <constraint firstAttribute="centerX" secondItem="S2i-o0-lfr" secondAttribute="centerX" id="Ff5-fR-n9H"/>
+                            <constraint firstAttribute="centerX" secondItem="Bq9-eF-0mD" secondAttribute="centerX" id="I8R-S3-dE3"/>
+                            <constraint firstAttribute="centerX" secondItem="3QQ-L0-Pns" secondAttribute="centerX" id="NxK-B4-JaS"/>
+                            <constraint firstAttribute="centerX" secondItem="0zQ-MT-seF" secondAttribute="centerX" id="YIE-sg-zKi"/>
+                            <constraint firstAttribute="centerX" secondItem="PdR-Yr-icY" secondAttribute="centerX" id="YNX-wV-UaY"/>
+                            <constraint firstAttribute="centerX" secondItem="vyy-9L-bls" secondAttribute="centerX" id="lTo-5N-TXr"/>
+                            <constraint firstAttribute="centerX" secondItem="n1h-Ix-okx" secondAttribute="centerX" id="wBo-5H-aUa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Audition" id="58P-Tt-m7v">
@@ -518,24 +498,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bN-XU-79M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3345" y="455"/>
-        </scene>
-        <!--Nav-Audition Category-->
-        <scene sceneID="q5C-IH-Py9">
-            <objects>
-                <navigationController title="Nav-Audition Category" automaticallyAdjustsScrollViewInsets="NO" id="R7w-Gt-vBD" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qbe-SW-XTu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Uwo-7Z-cGA" kind="relationship" relationship="rootViewController" id="QlD-D7-cFU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NRn-Zf-Ll5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1901" y="587"/>
         </scene>
     </scenes>
     <resources>

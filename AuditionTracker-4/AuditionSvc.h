@@ -35,7 +35,7 @@
 
 //-(NSMutableArray *) retrieveAllAuditions; // removed = changed to NSArray for Core Data
 -(NSArray *) retrieveAllAuditions;
--(NSArray *) retrieveAllCategories;
+
 
 
 @end

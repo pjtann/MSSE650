@@ -169,21 +169,6 @@ NSManagedObjectContext *moc = nil;
     }
 }
 
--(NSArray *) retrieveAllCategories {
-    // create fetch request
-    NSFetchRequest *fetchrequest = [[NSFetchRequest alloc] init];
-    // construct the fetch request
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Categories" inManagedObjectContext:moc];
-    [fetchrequest setEntity:entity];
-    // order/sort the contacts by name
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"auditionCategory" ascending:YES];
-    [fetchrequest setSortDescriptors:@[sortDescriptor]];
-    NSError *error;
-    // execute fetch request
-    NSArray *fetchedObjects = [moc executeFetchRequest:fetchrequest error:&error];
-    
-    return fetchedObjects;
-}
 
 
 

@@ -29,7 +29,7 @@
     Info *info = [[Info alloc] init];
     info.infoName = @"Audition Tracker";
     info.inforVersion = @"v.7.0";
-    info.infoVersionDate = @"June 15, 2015";
+    info.infoVersionDate = @"June 20, 2015";
     
     
     NSString *infoAll = [NSString stringWithFormat:@"%@\n %@\n %@\n", [info infoName], [info inforVersion], [info infoVersionDate]];

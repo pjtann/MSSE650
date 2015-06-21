@@ -23,8 +23,6 @@
 		6DE6F31E1B2F1787001CB331 /* AuditionTrackerMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6F31D1B2F1787001CB331 /* AuditionTrackerMainViewController.m */; };
 		6DE6F3211B2F8192001CB331 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6F3201B2F8192001CB331 /* InfoViewController.m */; };
 		6DE6F3241B2F86A3001CB331 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6F3231B2F86A3001CB331 /* Info.m */; };
-		6DE6F32D1B34C196001CB331 /* AuditionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6F32C1B34C196001CB331 /* AuditionCategory.m */; };
-		6DE6F3331B34CE45001CB331 /* AuditionCategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE6F3321B34CE45001CB331 /* AuditionCategoryTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +66,6 @@
 		6DE6F3201B2F8192001CB331 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		6DE6F3221B2F86A3001CB331 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		6DE6F3231B2F86A3001CB331 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
-		6DE6F32B1B34C196001CB331 /* AuditionCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionCategory.h; sourceTree = "<group>"; };
-		6DE6F32C1B34C196001CB331 /* AuditionCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuditionCategory.m; sourceTree = "<group>"; };
-		6DE6F3311B34CE45001CB331 /* AuditionCategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditionCategoryTableViewController.h; sourceTree = "<group>"; };
-		6DE6F3321B34CE45001CB331 /* AuditionCategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuditionCategoryTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,10 +168,6 @@
 				6DE6F30A1B2B6764001CB331 /* Model.xcdatamodeld */,
 				6DE6F3141B2B773F001CB331 /* Auditions.h */,
 				6DE6F3151B2B773F001CB331 /* Auditions.m */,
-				6DE6F32B1B34C196001CB331 /* AuditionCategory.h */,
-				6DE6F32C1B34C196001CB331 /* AuditionCategory.m */,
-				6DE6F3311B34CE45001CB331 /* AuditionCategoryTableViewController.h */,
-				6DE6F3321B34CE45001CB331 /* AuditionCategoryTableViewController.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -286,12 +276,10 @@
 				6D91B1141B18AC17006D4C4B /* AuditionListTableViewController.m in Sources */,
 				6D59B1B21B18A6BB00B2F273 /* AppDelegate.m in Sources */,
 				6D91B1171B18AD32006D4C4B /* AddAuditionViewController.m in Sources */,
-				6DE6F32D1B34C196001CB331 /* AuditionCategory.m in Sources */,
 				6DE6F3101B2B691E001CB331 /* AuditionSvcCoreData.m in Sources */,
 				6DE6F30C1B2B6764001CB331 /* Model.xcdatamodeld in Sources */,
 				6DE6F3241B2F86A3001CB331 /* Info.m in Sources */,
 				6D91B1201B18DFAD006D4C4B /* ShowAuditionDetailViewController.m in Sources */,
-				6DE6F3331B34CE45001CB331 /* AuditionCategoryTableViewController.m in Sources */,
 				6DE6F3161B2B773F001CB331 /* Auditions.m in Sources */,
 				6DE6F3211B2F8192001CB331 /* InfoViewController.m in Sources */,
 				6D59B1AF1B18A6BB00B2F273 /* main.m in Sources */,
