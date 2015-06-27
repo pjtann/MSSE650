@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Auditions" representedClassName="Auditions" syncable="YES">
+        <attribute name="auditionContact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="auditionDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="auditionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="auditionType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Categories" syncable="YES">
+        <attribute name="auditionCategory" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Contacts" syncable="YES">
+        <attribute name="contactEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactPhone" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Auditions" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Contacts" positionX="-45" positionY="27" width="128" height="90"/>
+        <element name="Categories" positionX="-27" positionY="54" width="128" height="60"/>
+    </elements>
+</model>

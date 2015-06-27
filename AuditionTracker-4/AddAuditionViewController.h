@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AuditionItem.h"
+//#import "AuditionItem.h" // removed with convert to 'Auditions' class with Core Data implementation
+#import "Auditions.h"
 
 
-@interface AddAuditionViewController : UIViewController
+@interface AddAuditionViewController : UIViewController <UITextFieldDelegate> // added delegate to see if it helps control the textfield shouldend, didend, shouldbegin, etc. validation controls in the AAVC.m file.
 
-@property AuditionItem *auditionItem;
+@property Auditions *auditionItem;
 
 
 @end
